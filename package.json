@@ -1,0 +1,46 @@
+{
+	"name": "@sharpcodes10/api",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sharpcodes19/api.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sharpcodes19/api/issues"
+	},
+	"homepage": "https://github.com/sharpcodes19/api#readme",
+	"author": {
+		"email": "jaesharp19@gmail.com",
+		"name": "Jae Jarabe",
+		"url": "https://www.facebook.com/jae.jarabe"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"clean": "rimraf dist",
+		"prebuild": "yarn clean",
+		"build": "tsc"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.0",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.3.2"
+	},
+	"dependencies": {}
+}
