@@ -33,7 +33,8 @@
 		"clean": "rimraf dist",
 		"prebuild": "yarn clean",
 		"build": "tsc",
-		"preinstall": "yarn config set legacy-peer-deps true"
+		"preinstall": "yarn config set legacy-peer-deps true",
+		"prepublish": "yarn build"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
