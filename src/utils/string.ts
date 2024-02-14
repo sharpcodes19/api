@@ -26,3 +26,18 @@ export const dataUrlToBlobAsync = (dataUrl: string, isWeb: boolean = false) => {
 		}
 	})
 }
+
+export const uriToBlobAsync = (uri: string) =>
+	new Promise<Blob>((resolve, reject) => {
+		const xhr = new XMLHttpRequest()
+		xhr.onload = () => {
+			resolve(xhr.response)
+		}
+		xhr.onerror = (e) => {
+			console.error('Conversion of uri to blob was failed.', e)
+			reject(new TypeError('Conversion of uri to blob was failed.'))
+		}
+		xhr.responseType = 'blob'
+		xhr.open('GET', uri, true)
+		xhr.send(null)
+	})

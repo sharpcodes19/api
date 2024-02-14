@@ -1,6 +1,6 @@
 {
 	"name": "@sharpcodes/api",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"main": "dist/index.js",
 	"license": "MIT",
 	"repository": {
@@ -47,10 +47,8 @@
 		"@babel/preset-react": "^7.23.3",
 		"@types/react": "^18.2.0",
 		"@types/react-dom": "^18.2.0",
+		"react-hook-form": "^7.50.1",
 		"rimraf": "^5.0.5",
 		"typescript": "^5.3.2"
-	},
-	"dependencies": {
-		"react-hook-form": "^7.50.1"
 	}
 }

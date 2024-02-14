@@ -10,6 +10,7 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"jsx": "react",
-		"noImplicitAny": true
+		"noImplicitAny": true,
+		"removeComments": true
 	}
 }
