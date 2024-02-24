@@ -1,6 +1,6 @@
 {
 	"name": "@sharpcodes/api",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"main": "dist/index.js",
 	"license": "MIT",
 	"repository": {
@@ -50,5 +50,9 @@
 		"react-hook-form": "^7.50.1",
 		"rimraf": "^5.0.5",
 		"typescript": "^5.3.2"
+	},
+	"dependencies": {
+		"clsx": "^2.1.0",
+		"tailwind-merge": "^2.2.1"
 	}
 }
